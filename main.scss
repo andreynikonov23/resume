@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Monserrat", sans-serif;
+    src: url('fonts/Montserrat-ExtraBoldItalic.ttf');
+  }
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #D4D4D4;
+}
+
+$gray: #474747;
+$blue: #438CD6;
+$green: #05A763;
+
+
+%full-width-block{
+    width: 100%;
+    height: 450px;
+}
+
+@mixin white-text($size, $weight){
+    font-family: Monserrat;
+    font-size: $size;
+    font-weight: $weight;
+    color: white;
+}
+@mixin gray-text($size, $weight){
+    font-family: "Montserrat";
+    font-size: $size;
+    font-weight: $weight;
+    color: $gray;
+}
+@mixin set-block($width, $height, $background){
+    width: $width;
+    height: $height;
+    background-color: $background;
+}
+
+
+.white-header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    color: white;
+}
+.gray-headers{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: $gray;
+}
+
+
+
+.code-img-block{
+    @extend %full-width-block;
+    background-image: url(img/code.png);
+    .code-background{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(67, 140, 214, 0.26);
+    }
+}
+.wrapper{
+    width: 100%;
+    padding: 150px 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 85%;
+}
+.visit-block{
+    @include set-block(100%, 698px, $green);
+    display: flex;
+    .my-photo-block{
+        width: 45%;
+    }
+    .me-info-text-block{
+        width: 100%;
+        padding: 90px 75px;
+        text-align: right;
+        .my-name{
+            width: 100%;
+        }
+    }
+}
