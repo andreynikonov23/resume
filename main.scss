@@ -1,8 +1,9 @@
-@font-face {
+/*@font-face {
     font-family: "Monserrat", sans-serif;
-    src: url('fonts/Montserrat-ExtraBoldItalic.ttf');
+    src: url('fonts/Montserrat-Italic.ttf');
   }
-
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -23,13 +24,13 @@ $green: #05A763;
 }
 
 @mixin white-text($size, $weight){
-    font-family: Monserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: $size;
     font-weight: $weight;
     color: white;
 }
 @mixin gray-text($size, $weight){
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
     font-size: $size;
     font-weight: $weight;
     color: $gray;
@@ -44,13 +45,13 @@ $green: #05A763;
 .white-header{
     font-family: 'Montserrat', sans-serif;
     font-size: 55px;
-    font-weight: 800;
+    font-weight: 700;
     color: white;
 }
 .gray-headers{
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
-    font-weight: 600;
+   // font-weight: 600;
     color: $gray;
 }
 
@@ -85,6 +86,7 @@ $green: #05A763;
         width: 100%;
         padding: 90px 75px;
         text-align: right;
+        
         .my-name{
             width: 100%;
         }
