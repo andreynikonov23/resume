@@ -1,9 +1,4 @@
-/*@font-face {
-    font-family: "Monserrat", sans-serif;
-    src: url('fonts/Montserrat-Italic.ttf');
-  }
-*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -16,6 +11,9 @@ body{
 $gray: #474747;
 $blue: #438CD6;
 $green: #05A763;
+$min-margin: 10px;
+$max-margin: 160px;
+$after-heading-margin: 85px;
 
 
 %full-width-block{
@@ -23,10 +21,15 @@ $green: #05A763;
     height: 450px;
 }
 
-@mixin white-text($size, $weight){
+@mixin white-text-with-size($size, $weight){
     font-family: 'Montserrat', sans-serif;
     font-size: $size;
     font-weight: $weight;
+    color: white;
+}
+@mixin white-text($size){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
     color: white;
 }
 @mixin gray-text($size, $weight){
@@ -48,10 +51,10 @@ $green: #05A763;
     font-weight: 700;
     color: white;
 }
-.gray-headers{
+.gray-header{
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-   // font-weight: 600;
+    font-size: 55px;
+    font-weight: 700;
     color: $gray;
 }
 
@@ -70,25 +73,121 @@ $green: #05A763;
     width: 100%;
     padding: 150px 0;
     position: absolute;
-    display: flex;
-    justify-content: center;
 }
 .container{
+    margin-left: auto;
+    margin-right: auto;
     width: 85%;
+}
+.mb{
+    margin-bottom: $max-margin;
 }
 .visit-block{
     @include set-block(100%, 698px, $green);
     display: flex;
+    border-radius: 20px;
+    overflow: hidden;
     .my-photo-block{
         width: 45%;
     }
-    .me-info-text-block{
+    .info-text{
         width: 100%;
-        padding: 90px 75px;
+        padding: 90px 75px 90px 250px;
         text-align: right;
-        
-        .my-name{
-            width: 100%;
+        .main-info{
+            margin-bottom: 30px;
+            .my-name{
+                width: 100%;
+            }
+            > div{
+                margin-bottom: $min-margin;
+                .job-name{
+                    @include white-text-with-size(22px, 500);
+                }
+                .blue-line{
+                    display: inline-block;
+                    background-color: $blue;
+                    height: 15px;
+                }
+                .min{
+                    width: 26px;
+                    margin-right: 10px;
+                }
+                .max{
+                    width: 90%;
+                }
+            }
         }
+    }
+    .contacts{
+        display: inline-block;
+        width: 85%;
+        padding: 10px 10px 0 65px;
+        text-align: left;
+        margin-bottom: 30px;
+        .contact{
+            margin-bottom: 17px;
+            i{
+                color: white;
+                margin-right: 24px;
+            }
+            @include white-text-with-size(22px, 500);
+        }
+    }
+    .social-networks{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.about-me{
+    background-color: $blue;
+    padding: 40px 0;
+    .white-header{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .text{
+        @include white-text-with-size(27px, normal);
+    }
+}
+.heading{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-bottom: $after-heading-margin;
+    div{
+        width: min-content;
+        margin-right: 35px;
+    }
+}
+.establishments{
+    display: flex;
+    gap: 20px;
+}
+.establishment{
+    width: 100%;
+    padding: 38px 50px;
+    background-color: $gray;
+    border-radius: 15px;
+    display: grid;
+    
+    .establishment-name{
+        text-align: center;
+        @include white-text-with-size(45px, 500);
+        margin-bottom: 40px;
+    }
+    ul{
+        display: block;
+        @include white-text-with-size(27px, 300);
+        margin-bottom: 40px;
+    }
+    .date{
+        display: grid;
+        text-align: center;
+        align-items: end;
+        @include white-text-with-size(16px, 300);
     }
 }

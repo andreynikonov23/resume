@@ -1,9 +1,4 @@
-/*@font-face {
-    font-family: "Monserrat", sans-serif;
-    src: url('fonts/Montserrat-Italic.ttf');
-  }
-*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -26,9 +21,10 @@ body {
   color: white;
 }
 
-.gray-headers {
+.gray-header {
   font-family: "Montserrat", sans-serif;
-  font-size: 25px;
+  font-size: 55px;
+  font-weight: 700;
   color: #474747;
 }
 
@@ -45,12 +41,16 @@ body {
   width: 100%;
   padding: 150px 0;
   position: absolute;
-  display: flex;
-  justify-content: center;
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 85%;
+}
+
+.mb {
+  margin-bottom: 160px;
 }
 
 .visit-block {
@@ -58,15 +58,133 @@ body {
   height: 698px;
   background-color: #05A763;
   display: flex;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .visit-block .my-photo-block {
   width: 45%;
 }
-.visit-block .me-info-text-block {
+.visit-block .info-text {
   width: 100%;
-  padding: 90px 75px;
+  padding: 90px 75px 90px 250px;
   text-align: right;
 }
-.visit-block .me-info-text-block .my-name {
+.visit-block .info-text .main-info {
+  margin-bottom: 30px;
+}
+.visit-block .info-text .main-info .my-name {
   width: 100%;
+}
+.visit-block .info-text .main-info > div {
+  margin-bottom: 10px;
+}
+.visit-block .info-text .main-info > div .job-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
+.visit-block .info-text .main-info > div .blue-line {
+  display: inline-block;
+  background-color: #438CD6;
+  height: 15px;
+}
+.visit-block .info-text .main-info > div .min {
+  width: 26px;
+  margin-right: 10px;
+}
+.visit-block .info-text .main-info > div .max {
+  width: 90%;
+}
+.visit-block .contacts {
+  display: inline-block;
+  width: 85%;
+  padding: 10px 10px 0 65px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.visit-block .contacts .contact {
+  margin-bottom: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+}
+.visit-block .contacts .contact i {
+  color: white;
+  margin-right: 24px;
+}
+.visit-block .social-networks {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me {
+  background-color: #438CD6;
+  padding: 40px 0;
+}
+.about-me .white-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about-me .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: normal;
+  color: white;
+}
+
+.heading {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 85px;
+}
+.heading div {
+  width: -moz-min-content;
+  width: min-content;
+  margin-right: 35px;
+}
+
+.establishments {
+  display: flex;
+  gap: 20px;
+}
+
+.establishment {
+  width: 100%;
+  padding: 38px 50px;
+  background-color: #474747;
+  border-radius: 15px;
+  display: grid;
+}
+.establishment .establishment-name {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 40px;
+}
+.establishment ul {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 40px;
+}
+.establishment .date {
+  display: grid;
+  text-align: center;
+  align-items: end;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
