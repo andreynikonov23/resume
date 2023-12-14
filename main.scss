@@ -21,7 +21,7 @@ $after-heading-margin: 85px;
     height: 450px;
 }
 
-@mixin white-text-with-size($size, $weight){
+@mixin white-text-with-weight($size, $weight){
     font-family: 'Montserrat', sans-serif;
     font-size: $size;
     font-weight: $weight;
@@ -32,10 +32,15 @@ $after-heading-margin: 85px;
     font-size: $size;
     color: white;
 }
-@mixin gray-text($size, $weight){
+@mixin gray-text-with-weight($size, $weight){
     font-family: 'Montserrat', sans-serif;
     font-size: $size;
     font-weight: $weight;
+    color: $gray;
+}
+@mixin gray-text($size){
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
     color: $gray;
 }
 @mixin set-block($width, $height, $background){
@@ -102,7 +107,7 @@ $after-heading-margin: 85px;
             > div{
                 margin-bottom: $min-margin;
                 .job-name{
-                    @include white-text-with-size(22px, 500);
+                    @include white-text-with-weight(22px, 500);
                 }
                 .blue-line{
                     display: inline-block;
@@ -131,7 +136,7 @@ $after-heading-margin: 85px;
                 color: white;
                 margin-right: 24px;
             }
-            @include white-text-with-size(22px, 500);
+            @include white-text-with-weight(22px, 500);
         }
     }
     .social-networks{
@@ -149,7 +154,7 @@ $after-heading-margin: 85px;
         margin-bottom: 40px;
     }
     .text{
-        @include white-text-with-size(27px, normal);
+        @include white-text-with-weight(27px, normal);
     }
 }
 .heading{
@@ -159,7 +164,6 @@ $after-heading-margin: 85px;
     width: fit-content;
     margin-bottom: $after-heading-margin;
     div{
-        width: min-content;
         margin-right: 35px;
     }
 }
@@ -176,18 +180,90 @@ $after-heading-margin: 85px;
     
     .establishment-name{
         text-align: center;
-        @include white-text-with-size(45px, 500);
+        @include white-text-with-weight(45px, 500);
         margin-bottom: 40px;
     }
     ul{
         display: block;
-        @include white-text-with-size(27px, 300);
+        @include white-text-with-weight(27px, 300);
         margin-bottom: 40px;
     }
     .date{
         display: grid;
         text-align: center;
         align-items: end;
-        @include white-text-with-size(16px, 300);
+        @include white-text-with-weight(16px, 300);
     }
 }
+
+.level{
+    .experience{
+        display: inline-block;
+        width: 43.5%;
+        background-color: white;
+        padding: 30px 60px 30px 40px;
+        border-left: 5px $blue solid;
+        .experience-name{
+            @include gray-text-with-weight(24px, 600);
+            margin-bottom: 10px;
+        }
+        .experience-info{
+            @include gray-text-with-weight(22px, 300);
+            margin-bottom: 10px;
+        }
+        li{
+            @include gray-text-with-weight(19px, 300);
+        }
+    }
+    .line{
+        display: inline-block;
+        background-color: $green;
+        
+    }
+    .circle{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: $green;
+        border-radius: 60px;
+        
+    }
+    &.lv1{ 
+        .line{
+            position: absolute;
+        }
+        
+        .horizontal{
+            width: 100px;
+            height: 2px;
+            margin-top: 30px;
+        }
+        .vertical{
+            width: 2px;
+            height: 358px;
+            margin-left: 125px;
+        }
+        .circle{
+            margin-left: 95px;
+            position: absolute;
+        }
+    }
+    &.lv2{
+        display: flex;
+        justify-content: right;
+        .horizontal{
+            width: 100px;
+            height: 2px;
+            margin-top: 30px;
+        }
+        .vertical{
+            width: 2px;
+            height: 358px;
+            margin-left: 125px;
+        }
+        .circle{
+            margin-left: 95px;
+        }
+    }
+}
+

@@ -146,8 +146,6 @@ body {
   margin-bottom: 85px;
 }
 .heading div {
-  width: -moz-min-content;
-  width: min-content;
   margin-right: 35px;
 }
 
@@ -187,4 +185,77 @@ body {
   font-size: 16px;
   font-weight: 300;
   color: white;
+}
+
+.level .experience {
+  display: inline-block;
+  width: 43.5%;
+  background-color: white;
+  padding: 30px 60px 30px 40px;
+  border-left: 5px #438CD6 solid;
+}
+.level .experience .experience-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.level .experience .experience-info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.level .experience li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  color: #474747;
+}
+.level .line {
+  display: inline-block;
+  background-color: #05A763;
+}
+.level .circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #05A763;
+  border-radius: 60px;
+}
+.level.lv1 .line {
+  position: absolute;
+}
+.level.lv1 .horizontal {
+  width: 100px;
+  height: 2px;
+  margin-top: 30px;
+}
+.level.lv1 .vertical {
+  width: 2px;
+  height: 358px;
+  margin-left: 125px;
+}
+.level.lv1 .circle {
+  margin-left: 95px;
+  position: absolute;
+}
+.level.lv2 {
+  display: flex;
+  justify-content: right;
+}
+.level.lv2 .horizontal {
+  width: 100px;
+  height: 2px;
+  margin-top: 30px;
+}
+.level.lv2 .vertical {
+  width: 2px;
+  height: 358px;
+  margin-left: 125px;
+}
+.level.lv2 .circle {
+  margin-left: 95px;
 }/*# sourceMappingURL=main.css.map */
