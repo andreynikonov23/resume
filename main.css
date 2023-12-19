@@ -187,75 +187,97 @@ body {
   color: white;
 }
 
-.level .experience {
+.experience-block {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: repeat(3, fit-content);
+}
+.experience-block .experience {
   display: inline-block;
-  width: 43.5%;
   background-color: white;
   padding: 30px 60px 30px 40px;
   border-left: 5px #438CD6 solid;
 }
-.level .experience .experience-name {
+.experience-block .experience .experience-name {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: #474747;
   margin-bottom: 10px;
 }
-.level .experience .experience-info {
+.experience-block .experience .experience-info {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 300;
   color: #474747;
   margin-bottom: 10px;
 }
-.level .experience li {
+.experience-block .experience li {
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
   font-weight: 300;
   color: #474747;
 }
-.level .line {
-  display: inline-block;
-  background-color: #05A763;
+.experience-block .gr1 {
+  grid-area: 1/1/2/2;
 }
-.level .circle {
-  display: inline-block;
+.experience-block .figure {
+  grid-area: 1/2/4/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.experience-block .figure .line-wrapper {
+  grid-area: 1/1/3/2;
+}
+.experience-block .gr2 {
+  grid-area: 2/3/3/4;
+}
+.experience-block .gr3 {
+  grid-area: 3/1/4/2;
+}
+.experience-block .vertical-line {
+  width: 2px;
+  height: 100%;
+  background-color: #05A763;
+  margin-left: 50%;
+}
+
+.circle-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.circle-wrapper.odd {
+  grid-template-columns: 40% 60%;
+}
+.circle-wrapper.even {
+  grid-template-columns: 60% 40%;
+}
+.circle-wrapper.even .even-first-block {
+  display: flex;
+  justify-content: end;
+}
+.circle-wrapper .horizontal-line {
+  width: 100%;
+  height: 2px;
+  background-color: #05A763;
+  margin-top: 30px;
+}
+.circle-wrapper .circle {
   width: 60px;
   height: 60px;
   background-color: #05A763;
   border-radius: 60px;
 }
-.level.lv1 .line {
-  position: absolute;
+
+.gr4 {
+  grid-area: 1/2/2/3;
 }
-.level.lv1 .horizontal {
-  width: 100px;
-  height: 2px;
-  margin-top: 30px;
+
+.gr5 {
+  grid-area: 2/2/3/3;
 }
-.level.lv1 .vertical {
-  width: 2px;
-  height: 358px;
-  margin-left: 125px;
-}
-.level.lv1 .circle {
-  margin-left: 95px;
-  position: absolute;
-}
-.level.lv2 {
-  display: flex;
-  justify-content: right;
-}
-.level.lv2 .horizontal {
-  width: 100px;
-  height: 2px;
-  margin-top: 30px;
-}
-.level.lv2 .vertical {
-  width: 2px;
-  height: 358px;
-  margin-left: 125px;
-}
-.level.lv2 .circle {
-  margin-left: 95px;
+
+.gr6 {
+  grid-area: 3/2/4/3;
 }/*# sourceMappingURL=main.css.map */

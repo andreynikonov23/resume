@@ -195,11 +195,12 @@ $after-heading-margin: 85px;
         @include white-text-with-weight(16px, 300);
     }
 }
-
-.level{
+.experience-block{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: repeat(3, fit-content); 
     .experience{
         display: inline-block;
-        width: 43.5%;
         background-color: white;
         padding: 30px 60px 30px 40px;
         border-left: 5px $blue solid;
@@ -215,55 +216,131 @@ $after-heading-margin: 85px;
             @include gray-text-with-weight(19px, 300);
         }
     }
-    .line{
-        display: inline-block;
-        background-color: $green;
-        
+    .gr1{
+        grid-area: 1 / 1 / 2 / 2;
     }
-    .circle{
-        display: inline-block;
-        width: 60px;
-        height: 60px;
-        background-color: $green;
-        border-radius: 60px;
-        
-    }
-    &.lv1{ 
-        .line{
-            position: absolute;
-        }
-        
-        .horizontal{
-            width: 100px;
-            height: 2px;
-            margin-top: 30px;
-        }
-        .vertical{
-            width: 2px;
-            height: 358px;
-            margin-left: 125px;
-        }
-        .circle{
-            margin-left: 95px;
-            position: absolute;
+
+    .figure{
+        grid-area: 1 / 2 / 4 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        .line-wrapper{
+            grid-area: 1 / 1 / 3 / 2;
         }
     }
-    &.lv2{
-        display: flex;
-        justify-content: right;
-        .horizontal{
-            width: 100px;
-            height: 2px;
-            margin-top: 30px;
-        }
-        .vertical{
-            width: 2px;
-            height: 358px;
-            margin-left: 125px;
-        }
-        .circle{
-            margin-left: 95px;
-        }
+    .gr2{
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    .gr3{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .vertical-line{
+        @include set-block(2px, 100%, $green);
+        margin-left: 50%;
     }
 }
+.circle-wrapper{
+    display: grid;
+    grid-template-rows: 1fr;
+    &.odd{
+        grid-template-columns: 40% 60%;
+        
+    }
+    &.even{
+        grid-template-columns: 60% 40%;
+        .even-first-block{
+            display: flex;
+            justify-content: end;
+        }
+    }
+    .horizontal-line{
+        @include set-block(100%, 2px, $green);
+        margin-top: 30px;
+    }
+    .circle{
+        @include set-block(60px, 60px, $green);
+        border-radius: 60px;
+    }
+}
+.gr4{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.gr5{
+    grid-area: 2 / 2 / 3 / 3;
+}
+.gr6{
+    grid-area: 3 / 2 / 4 / 3;;
+}
+
+// .level{
+//     .experience{
+//         display: inline-block;
+//         width: 43.5%;
+//         background-color: white;
+//         padding: 30px 60px 30px 40px;
+//         border-left: 5px $blue solid;
+//         .experience-name{
+//             @include gray-text-with-weight(24px, 600);
+//             margin-bottom: 10px;
+//         }
+//         .experience-info{
+//             @include gray-text-with-weight(22px, 300);
+//             margin-bottom: 10px;
+//         }
+//         li{
+//             @include gray-text-with-weight(19px, 300);
+//         }
+//     }
+//     .line{
+//         display: inline-block;
+//         background-color: $green;
+        
+//     }
+//     .circle{
+//         display: inline-block;
+//         width: 60px;
+//         height: 60px;
+//         background-color: $green;
+//         border-radius: 60px;
+        
+//     }
+//     &.lv1{ 
+//         .line{
+//             position: absolute;
+//         }
+        
+//         .horizontal{
+//             width: 100px;
+//             height: 2px;
+//             margin-top: 30px;
+//         }
+//         .vertical{
+//             width: 2px;
+//             height: 358px;
+//             margin-left: 125px;
+//         }
+//         .circle{
+//             margin-left: 95px;
+//             position: absolute;
+//         }
+//     }
+//     &.lv2{
+//         display: flex;
+//         justify-content: right;
+//         .horizontal{
+//             width: 100px;
+//             height: 2px;
+//             margin-top: 30px;
+//         }
+//         .vertical{
+//             width: 2px;
+//             height: 358px;
+//             margin-left: 125px;
+//         }
+//         .circle{
+//             margin-left: 95px;
+//         }
+//     }
+// }
 
