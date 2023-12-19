@@ -246,16 +246,17 @@ body {
 .circle-wrapper {
   display: grid;
   grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
 }
-.circle-wrapper.odd {
-  grid-template-columns: 40% 60%;
-}
-.circle-wrapper.even {
-  grid-template-columns: 60% 40%;
+.circle-wrapper.odd .circle {
+  right: 30px;
 }
 .circle-wrapper.even .even-first-block {
   display: flex;
   justify-content: end;
+}
+.circle-wrapper.even .circle {
+  left: 30px;
 }
 .circle-wrapper .horizontal-line {
   width: 100%;
@@ -268,6 +269,7 @@ body {
   height: 60px;
   background-color: #05A763;
   border-radius: 60px;
+  position: relative;
 }
 
 .gr4 {

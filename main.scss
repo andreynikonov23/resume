@@ -243,15 +243,19 @@ $after-heading-margin: 85px;
 .circle-wrapper{
     display: grid;
     grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
     &.odd{
-        grid-template-columns: 40% 60%;
-        
+        .circle{
+            right: 30px;
+        }
     }
     &.even{
-        grid-template-columns: 60% 40%;
         .even-first-block{
             display: flex;
             justify-content: end;
+        }
+        .circle{
+            left: 30px;
         }
     }
     .horizontal-line{
@@ -261,6 +265,7 @@ $after-heading-margin: 85px;
     .circle{
         @include set-block(60px, 60px, $green);
         border-radius: 60px;
+        position: relative;
     }
 }
 .gr4{
