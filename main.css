@@ -456,28 +456,71 @@ body {
   margin-left: -12.5px;
 }
 
-.project .project-screen {
-  display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.project {
+  margin-bottom: 90px;
+}
+.project img {
+  position: absolute;
+  z-index: 1;
+}
+.project .wrapper-proj {
+  width: 100%;
+}
+.project .wrapper-proj .project-info {
+  height: 435px;
+  max-height: 435px;
   position: relative;
-}
-.project .project-info {
-  display: inline-block;
+  width: 78%;
   background-color: white;
-  padding: 40px 30px 40px 150px;
   border-top: 5px solid #438CD6;
+  padding: 40px 30px 40px 150px;
+  left: 393px;
+  top: 50px;
+}
+.project .wrapper-proj .project-info .project-name {
+  text-align: right;
   font-family: "Montserrat", sans-serif;
-  font-size: 15;
-  font-weight: 300;
+  font-size: 55px;
+  font-weight: 800;
   color: #474747;
-  filter: drop-shadow(0 1px 6px #474747);
+  margin-bottom: 10px;
 }
-.project .project-info .project-name {
+.project .wrapper-proj .project-info .project-repo {
   text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
-.project .project-info .github-link {
+.project .wrapper-proj .project-info .green-line-wrapper {
   text-align: right;
+  margin-bottom: 10px;
+}
+.project .wrapper-proj .project-info .green-line {
+  display: inline-block;
+  background-color: #05A763;
+  height: 17px;
+}
+.project .wrapper-proj .project-info .green-line.min {
+  width: 25px;
+  margin-right: 17px;
+}
+.project .wrapper-proj .project-info .green-line.max {
+  width: 60%;
+}
+.project .wrapper-proj .project-info .project-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #474747;
+}
+.project .wrapper-proj .project-info .project-text span {
+  font-weight: 600;
+}
+.project .wrapper-proj .project-info .triangle {
+  position: absolute;
+  border-top: 57px solid #474747;
+  border-right: 42px solid transparent;
+  bottom: 0px;
+  right: 100%;
+  left: 0px;
 }/*# sourceMappingURL=main.css.map */
