@@ -55,18 +55,25 @@ body {
 
 .visit-block {
   width: 100%;
-  height: 698px;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #05A763;
   display: flex;
   border-radius: 20px;
   overflow: hidden;
 }
 .visit-block .my-photo-block {
-  width: 45%;
+  width: 95%;
+}
+.visit-block .my-photo-block img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .visit-block .info-text {
   width: 100%;
-  padding: 90px 75px 90px 250px;
+  padding: 5.5% 4.7% 5.5% 14.7%;
   text-align: right;
 }
 .visit-block .info-text .main-info {
@@ -523,4 +530,98 @@ body {
   bottom: 0px;
   right: 100%;
   left: 0px;
+}
+
+@media (max-width: 1140px) {
+  .visit-block .info-text .main-info > div .min {
+    margin-right: 5px;
+  }
+  .visit-block .main-info {
+    margin-bottom: 20px;
+  }
+  .visit-block .main-info .my-name {
+    font-size: 35px;
+  }
+  .visit-block .main-info .job-name {
+    font-size: 12px;
+  }
+  .visit-block .contacts {
+    margin-bottom: 20px;
+  }
+  .visit-block .contacts .contact {
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+  .visit-block .contacts .contact i {
+    margin-right: 14px;
+  }
+  .visit-block .social-networks img {
+    width: 50px;
+  }
+  .about-me .text {
+    font-size: 17px;
+  }
+  .establishment .establishment-name {
+    font-size: 25px;
+  }
+  .establishment ul {
+    font-size: 17px;
+  }
+  .experience .experience-name {
+    font-size: 17px;
+  }
+  .experience .experience-info {
+    font-size: 12px;
+  }
+  .experience li {
+    font-size: 13px;
+  }
+  .experience-block .experience {
+    padding: 15px 40px 15px 20px;
+  }
+  .experience-block .experience .experience-name {
+    font-size: 17px;
+  }
+  .experience-block .experience .experience-info {
+    font-size: 12px;
+  }
+  .experience-block .experience li {
+    font-size: 13px;
+  }
+  .skills .skills-block .skills-head {
+    font-size: 16px;
+  }
+  .skills .skills-block > div .skill {
+    font-size: 10px;
+  }
+  .skills .skills-block > div .progress-circle {
+    width: 15px;
+    height: 15px;
+    bottom: 5px;
+  }
+  .project img {
+    width: 235px;
+  }
+  .project .wrapper-proj .project-info {
+    height: 235px;
+    left: 193px;
+    padding: 10px 20px 10px 80px;
+  }
+  .project .wrapper-proj .project-info .project-name {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .project .wrapper-proj .project-info .project-repo {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .project .wrapper-proj .project-info .green-line-wrapper {
+    margin-bottom: 5px;
+  }
+  .project .wrapper-proj .project-info .green-line-wrapper .green-line {
+    height: 10px;
+  }
+  .project .wrapper-proj .project-info .project-text {
+    font-size: 9px;
+  }
 }/*# sourceMappingURL=main.css.map */
