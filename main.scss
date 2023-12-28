@@ -549,8 +549,81 @@ $after-heading-margin: 85px;
 
 
 
-
-@media (max-width: 1140px){
+@media (max-width: 1664px) {
+    .visit-block{
+        .white-header{
+            font-size: 45px;
+        }
+        .visit-block{
+            .info-text{
+                .main-info{
+                    > div{
+                        .job-name{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }   
+        .contacts{
+            .contact{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media(max-width: 1551px){
+    .visit-block{
+        .contacts{
+            .contact{
+                font-size: 16px;
+            }
+        }
+    }
+    .skills{
+        .skills-block{
+            .skills-head{
+                font-size: 16px;
+            }
+            > div{
+                .skill{
+                    font-size: 10px;
+                }
+                .progress-circle{
+                    width: 15px;
+                    height: 15px;
+                    bottom: 5px
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1500px){
+    .project{
+        img{
+            width: 335px;
+        }
+        .wrapper-proj{
+            .project-info{
+                height: 335px;
+                left: 293px;
+                padding: 40px 30px 40px 80px;
+                .project-name{
+                    font-size: 35px;
+                   
+                }
+                .project-repo{
+                    font-size: 12px;
+                }
+                .project-text{
+                    font-size: 11px;
+                }
+            }
+        }
+        
+    }
+}
+@media(max-width: 1330px){
     .visit-block .info-text .main-info > div .min{
         margin-right: 5px;
     }
@@ -581,16 +654,21 @@ $after-heading-margin: 85px;
             }
         }   
     }
-    .about-me{
-        .text{
-            font-size: 17px;
-        }
-    }
+}
+@media (max-width: 1196px){
     .establishment{
         .establishment-name{
             font-size: 25px;
         }
         ul{
+            font-size: 17px;
+        }
+    }
+}
+@media (max-width: 1140px){
+    
+    .about-me{
+        .text{
             font-size: 17px;
         }
     }
@@ -617,23 +695,6 @@ $after-heading-margin: 85px;
             }
             li{
                 font-size: 13px;
-            }
-        }
-    }
-    .skills{
-        .skills-block{
-            .skills-head{
-                font-size: 16px;
-            }
-            > div{
-                .skill{
-                    font-size: 10px;
-                }
-                .progress-circle{
-                    width: 15px;
-                    height: 15px;
-                    bottom: 5px
-                }
             }
         }
     }
@@ -667,4 +728,145 @@ $after-heading-margin: 85px;
         }
         
     }
+}
+@media (max-width: 1112px){
+    .visit-block{
+        .info-text{
+            .main-info{
+                > div{
+                    .max{
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 1041px) {
+    .visit-block{
+        .info-text{
+            padding: 5.5% 4.7% 5.5% 10%;
+        }
+    }
+}
+@media (max-width: 954px){
+    .visit-block{
+        .main-info{
+            margin-bottom: 20px;
+            .my-name{
+                font-size: 30px;
+            }
+            .job-name{
+                font-size: 15px;
+            }
+        }
+        .contacts{
+            padding: 10px 10px 0 55px;
+            .contact{
+                font-size: 10px;
+            }
+        }
+    }
+    .skills{
+        grid-column-gap: 15px;
+    }
+    .experience-block{
+        .experience{
+            li{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 920px){
+    .establishment{
+        padding: 38px 10px;
+        .establishment-name{
+            font-size: 22px;
+        }
+        ul{
+            font-size: 14px;
+        }
+        .date{
+            font-size: 10px;
+        }
+    }
+    .proj-container{
+        width: 95%;
+    }
+    .project{
+        .wrapper-proj{
+            .project-info{
+                padding: 5px 10px 10px 50px;
+                .project-text{
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 827px){
+    .skills-container{
+        width: 100%;
+    }
+    .proj-container{
+        width: 95%;
+    }
+    .project{
+        img{
+            width: 195px;
+        }
+        .wrapper-proj{
+            .project-info{
+                padding: 0px 10px 10px 50px;
+                height: 195px;
+                left: 153px;
+                .project-name{
+                    margin-bottom: 0;
+                }
+                .project-repo{
+                    margin-bottom: 0;
+                }
+                .green-line-wrapper{
+                    margin-bottom: 0;
+                }
+                .project-text{
+                    font-size: 8px;
+                }
+            }
+        }
+    }   
+}
+@media(max-width: 813px){
+    .visit-block{
+        .info-text{
+            padding: 5.5% 4.7% 5.5% 8%;
+            .main-info{
+                .my-name{
+                    font-size: 25px;
+                }
+                .job-name{
+                    font-size: 16px;
+                }
+            }
+        }
+        .contacts{
+            padding: 10px 10px 0 45px;
+        }
+    }
+}
+@media (max-width: 751px){
+    
+}
+@media(max-width: 739px){
+    .project{
+        .wrapper-proj{
+            .project-info{
+                &.reviews{
+                    padding: 0px 0px 10px 45px;
+                }
+            }
+        }
+    }
+    
 }

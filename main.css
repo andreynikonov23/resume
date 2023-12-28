@@ -532,7 +532,53 @@ body {
   left: 0px;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1664px) {
+  .visit-block .white-header {
+    font-size: 45px;
+  }
+  .visit-block .visit-block .info-text .main-info > div .job-name {
+    font-size: 20px;
+  }
+  .visit-block .contacts .contact {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1551px) {
+  .visit-block .contacts .contact {
+    font-size: 16px;
+  }
+  .skills .skills-block .skills-head {
+    font-size: 16px;
+  }
+  .skills .skills-block > div .skill {
+    font-size: 10px;
+  }
+  .skills .skills-block > div .progress-circle {
+    width: 15px;
+    height: 15px;
+    bottom: 5px;
+  }
+}
+@media (max-width: 1500px) {
+  .project img {
+    width: 335px;
+  }
+  .project .wrapper-proj .project-info {
+    height: 335px;
+    left: 293px;
+    padding: 40px 30px 40px 80px;
+  }
+  .project .wrapper-proj .project-info .project-name {
+    font-size: 35px;
+  }
+  .project .wrapper-proj .project-info .project-repo {
+    font-size: 12px;
+  }
+  .project .wrapper-proj .project-info .project-text {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1330px) {
   .visit-block .info-text .main-info > div .min {
     margin-right: 5px;
   }
@@ -558,13 +604,17 @@ body {
   .visit-block .social-networks img {
     width: 50px;
   }
-  .about-me .text {
-    font-size: 17px;
-  }
+}
+@media (max-width: 1196px) {
   .establishment .establishment-name {
     font-size: 25px;
   }
   .establishment ul {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1140px) {
+  .about-me .text {
     font-size: 17px;
   }
   .experience .experience-name {
@@ -587,17 +637,6 @@ body {
   }
   .experience-block .experience li {
     font-size: 13px;
-  }
-  .skills .skills-block .skills-head {
-    font-size: 16px;
-  }
-  .skills .skills-block > div .skill {
-    font-size: 10px;
-  }
-  .skills .skills-block > div .progress-circle {
-    width: 15px;
-    height: 15px;
-    bottom: 5px;
   }
   .project img {
     width: 235px;
@@ -623,5 +662,108 @@ body {
   }
   .project .wrapper-proj .project-info .project-text {
     font-size: 9px;
+  }
+}
+@media (max-width: 1112px) {
+  .visit-block .info-text .main-info > div .max {
+    width: 85%;
+  }
+}
+@media (max-width: 1041px) {
+  .visit-block .info-text {
+    padding: 5.5% 4.7% 5.5% 10%;
+  }
+}
+@media (max-width: 954px) {
+  .visit-block .main-info {
+    margin-bottom: 20px;
+  }
+  .visit-block .main-info .my-name {
+    font-size: 30px;
+  }
+  .visit-block .main-info .job-name {
+    font-size: 15px;
+  }
+  .visit-block .contacts {
+    padding: 10px 10px 0 55px;
+  }
+  .visit-block .contacts .contact {
+    font-size: 10px;
+  }
+  .skills {
+    grid-column-gap: 15px;
+  }
+  .experience-block .experience li {
+    font-size: 10px;
+  }
+}
+@media (max-width: 920px) {
+  .establishment {
+    padding: 38px 10px;
+  }
+  .establishment .establishment-name {
+    font-size: 22px;
+  }
+  .establishment ul {
+    font-size: 14px;
+  }
+  .establishment .date {
+    font-size: 10px;
+  }
+  .proj-container {
+    width: 95%;
+  }
+  .project .wrapper-proj .project-info {
+    padding: 5px 10px 10px 50px;
+  }
+  .project .wrapper-proj .project-info .project-text {
+    font-size: 9px;
+  }
+}
+@media (max-width: 827px) {
+  .skills-container {
+    width: 100%;
+  }
+  .proj-container {
+    width: 95%;
+  }
+  .project img {
+    width: 195px;
+  }
+  .project .wrapper-proj .project-info {
+    padding: 0px 10px 10px 50px;
+    height: 195px;
+    left: 153px;
+  }
+  .project .wrapper-proj .project-info .project-name {
+    margin-bottom: 0;
+  }
+  .project .wrapper-proj .project-info .project-repo {
+    margin-bottom: 0;
+  }
+  .project .wrapper-proj .project-info .green-line-wrapper {
+    margin-bottom: 0;
+  }
+  .project .wrapper-proj .project-info .project-text {
+    font-size: 8px;
+  }
+}
+@media (max-width: 813px) {
+  .visit-block .info-text {
+    padding: 5.5% 4.7% 5.5% 8%;
+  }
+  .visit-block .info-text .main-info .my-name {
+    font-size: 25px;
+  }
+  .visit-block .info-text .main-info .job-name {
+    font-size: 16px;
+  }
+  .visit-block .contacts {
+    padding: 10px 10px 0 45px;
+  }
+}
+@media (max-width: 739px) {
+  .project .wrapper-proj .project-info.reviews {
+    padding: 0px 0px 10px 45px;
   }
 }/*# sourceMappingURL=main.css.map */
