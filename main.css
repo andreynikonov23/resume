@@ -598,6 +598,7 @@ body {
 }
 
 .project-small {
+  display: none;
   background-color: white;
   border-top: 5px solid #438CD6;
   padding: 10px 20px 15px 20px;
@@ -872,7 +873,7 @@ body {
     padding: 0px 0px 10px 45px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 720px) {
   .code-img-block {
     display: none;
   }
@@ -884,7 +885,7 @@ body {
     font-size: 25px;
   }
   .gray-header {
-    font-size: 25px;
+    font-size: 35px;
   }
   .vb-container {
     width: 100%;
@@ -894,19 +895,27 @@ body {
     background-size: cover;
   }
   .visit-block {
-    width: 95%;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-right: auto;
     margin-left: auto;
     display: block;
   }
   .visit-block .my-photo-block {
-    width: 100%;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .visit-block .my-photo-block img {
+    width: 500px;
   }
   .visit-block .info-text .main-info {
     margin-bottom: 20px;
   }
+  .visit-block .info-text .main-info .my-name {
+    font-size: 35px;
+  }
   .visit-block .info-text .main-info > div .job-name {
-    font-size: 12px;
+    font-size: 16px;
   }
   .visit-block .info-text .main-info > div .blue-line {
     height: 8px;
@@ -917,6 +926,9 @@ body {
   .visit-block .info-text .contacts {
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .visit-block .info-text .contacts .contact {
+    font-size: 12px;
   }
   .mb {
     margin-bottom: 100px;
@@ -937,7 +949,7 @@ body {
     margin-bottom: 40px;
   }
   .heading img {
-    width: 55px;
+    width: 85px;
   }
   .heading div {
     margin-right: 15px;
@@ -1015,5 +1027,96 @@ body {
   }
   .projects-full {
     display: none;
+  }
+  .project-small {
+    display: block;
+  }
+}
+@media (max-width: 522px) {
+  .gray-header {
+    font-size: 25px;
+  }
+  .white-header {
+    font-size: 25px;
+  }
+  .visit-block {
+    width: 95%;
+  }
+  .visit-block .my-photo-block {
+    width: 100%;
+  }
+  .visit-block .my-photo-block img {
+    width: inherit;
+  }
+  .visit-block .info-text .main-info .my-name {
+    font-size: 25px;
+  }
+  .visit-block .info-text > div .job-name {
+    font-size: 12px;
+  }
+  .visit-block .info-text .contacts .contact {
+    font-size: 9px;
+  }
+  .heading img {
+    width: 55px;
+  }
+}
+@media (max-width: 308px) {
+  .skills .skills-block .skills-head {
+    font-size: 20px;
+  }
+}
+@media (max-width: 280px) {
+  .gray-header {
+    font-size: 20px;
+  }
+  .heading div {
+    margin-right: 5px;
+  }
+  .heading img {
+    width: 45px;
+  }
+  .visit-block .info-text .main-info .my-name {
+    font-size: 21px;
+  }
+  .visit-block .info-text .main-info > div .job-name {
+    font-size: 12px;
+  }
+  .visit-block .info-text .contacts .contact {
+    font-size: 8px;
+  }
+  .visit-block .social-networks img {
+    width: 40px;
+  }
+  .about-me {
+    font-size: 10px;
+  }
+  .establishments .establishment .establishment-name {
+    font-size: 14px;
+  }
+  .establishments .establishment ul {
+    padding: 0;
+    font-size: 10px;
+  }
+  .establishments .establishment .date {
+    font-size: 8px;
+  }
+  .experience-block-small {
+    grid-template-columns: 20% 80%;
+  }
+  .experience .experience-name {
+    font-size: 12px;
+  }
+  .experience .experience-info {
+    font-size: 9px;
+  }
+  .experience li {
+    font-size: 8px;
+  }
+  .skills .skills-block .skills-head {
+    font-size: 19px;
+  }
+  .project-small .project-repo {
+    font-size: 8px;
   }
 }/*# sourceMappingURL=main.css.map */
